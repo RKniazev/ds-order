@@ -1,0 +1,23 @@
+{
+    "name": "DSOrder",
+    "description" : "Поможем Ярику сделать заказ!",
+    "version": "0.1",
+    "browser_action": {
+        "default_popup": "start.html",
+        "default_icon": "icon/icon_512.png"
+    },
+    "permissions": [
+        "activeTab",
+        "http://d-tobacco.ru/*"
+    ],
+    "icons": {
+        "512": "icon/icon_512.png"
+    },
+    "content_scripts": [
+        {
+        "matches": ["http://d-tobacco.ru/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "manifest_version": 2
+  }
