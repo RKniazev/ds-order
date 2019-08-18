@@ -1,6 +1,6 @@
 {
     "name": "DSOrder",
-    "description" : "Поможем Ярику сделать заказ!",
+    "description" : "Быстрый заказ",
     "version": "0.1",
     "browser_action": {
         "default_icon": "icon/icon_512.png"
