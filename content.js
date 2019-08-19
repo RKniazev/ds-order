@@ -30,7 +30,7 @@ btnForm.onclick = function() {
         if (element.length >= 2)
         {
             let inpSku = element.split("	")[0];
-            let value = element.split("	")[1];
+            let value = element.split("	")[2];
             
             pageSku.forEach(elmtSku => {
                 let sku = elmtSku.querySelector('td:nth-child(2)').innerText;
@@ -44,6 +44,11 @@ btnForm.onclick = function() {
                     elmtSku.querySelector('td:nth-child(6) > div > button').click();
                 }
             });
+        }
+
+        if (find == false && element.length >= 2)
+        {
+            alert('Сейчас нет \n' + element.split("	") [1]);
         }
     });
 }
