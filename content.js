@@ -26,7 +26,7 @@ btnForm.onclick = function() {
 
     textArea.forEach(element => {
         let find = false;
-        
+
         if (element.length >= 2)
         {
             let inpSku = element.split("	")[0];
@@ -35,10 +35,13 @@ btnForm.onclick = function() {
             pageSku.forEach(elmtSku => {
                 let sku = elmtSku.querySelector('td:nth-child(2)').innerText;
                 
-                if (find == false && inpSku == sku) {
+                if (parseInt(value) > 0 && find == false && inpSku == sku) {
                     find = true;
                     console.log('Нашли' + sku + ' / заполняем ' + value);
                     elmtSku.querySelector('td:nth-child(5) > div > input').value = parseInt(value);
+
+                    console.log(elmtSku.querySelector('td:nth-child(6) > div > button'));
+                    elmtSku.querySelector('td:nth-child(6) > div > button').click();
                 }
             });
         }
