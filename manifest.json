@@ -1,16 +1,17 @@
 {
     "name": "DSOrder",
     "description" : "Делаем жизнь проще",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "browser_action": {
-        "default_icon": "icon/icon_512.png"
+        "default_icon": "icon/icon512.png"
     },
     "permissions": [
         "activeTab",
         "http://d-tobacco.ru/*"
     ],
     "icons": {
-        "512": "icon/icon_512.png"
+        "128": "icon/icon128.png",
+        "512": "icon/icon512.png"
     },
     "content_scripts": [
         {
